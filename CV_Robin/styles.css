@@ -1,0 +1,163 @@
+/* On travaille sur la balise body, donc sur TOUTE la page */
+body {
+  background-color: rgb(43, 37, 37); /* Le fond de la page sera noir */
+  color: rgb(253, 253, 253); /* Le texte de la page sera blanc */
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed; /* Le fond restera fixe */
+  margin-top: 80px;
+}
+
+.gras {
+  font-weight: bold;
+}
+
+.italique {
+  font-style: italic;
+}
+
+h1 {
+  color: rgba(246, 239, 253, 0.808);
+  font-size: x-large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 15px;
+  padding: 20px;
+  border: 4px solid black;
+  border-radius: 18px;
+  background-color: black;
+}
+
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(250, 240, 248);
+}
+
+.loisirs {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(99, 3, 194);
+}
+
+.image {
+  border-radius: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+  height: 135px;
+  width: 135px;
+  margin-right: 25px;
+}
+
+.coordonees {
+  background-color: rgb(64 62 45 / 33%);
+  margin: auto;
+  padding: 20px;
+  border: 4px solid black;
+  border-radius: 18px;
+  width: 40%;
+}
+
+.competences {
+  background-color: rgb(64 62 45 / 33%);
+  margin: auto;
+  padding: 20px;
+  border: 4px solid black;
+  border-radius: 18px;
+  width: 40%;
+  align-self: flex-end;
+}
+
+.formations {
+  background-color: rgb(64 62 45 / 33%);
+  margin: auto;
+  padding: 20px;
+  border: 4px solid black;
+  border-radius: 18px;
+  width: 52%;
+}
+
+form {
+  /* Uniquement centrer le formulaire sur la page */
+  margin: 0 auto;
+  width: 400px;
+  /* Encadré pour voir les limites du formulaire */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* Pour s'assurer que tous les champs texte ont la même police.
+       Par défaut, les textarea ont une police monospace */
+  font: 1em sans-serif;
+
+  /* Pour que tous les champs texte aient la même dimension */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Pour harmoniser le look & feel des bordures des champs texte */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Pour souligner légèrement les éléments actifs */
+  border-color: rgb(158, 154, 154);
+}
+
+textarea {
+  /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+  vertical-align: top;
+
+  /* Pour donner assez de place pour écrire du texte */
+  height: 5em;
+}
+
+.button {
+  /* Pour placer le bouton à la même position que les champs texte */
+  padding-left: 90px; /* même taille que les étiquettes */
+}
+
+button {
+  /* Cette marge supplémentaire représente grosso modo le même espace que celui
+       entre les étiquettes et les champs texte */
+  margin-left: 0.5em;
+}
+.menu {
+  background-color: rgb(64 62 45 / 33%);
+  margin: auto;
+  padding: 20px;
+  border: 4px solid white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#conteneur {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+table
+{
+    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+}
+td, th /* Mettre une bordure sur les td ET les th */
+{
+    border: 4px solid rgb(138, 134, 134);
+}

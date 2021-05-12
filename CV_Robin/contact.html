@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Contact de Robin Poulet</title>
+  </head>
+  <body>
+    <a href="index.html">Mon CV</a>
+    <a href="hobby.html">Mes Hobbys</a>
+
+    <h1>Contactez moi</h1>
+
+    <a href="mailto:poulet.robin@laposte.net">Envoyez moi un mail </a>
+
+    <form action="https://httpbin.org/get" method="get">
+      <label for="pays">Dans quel pays habitez-vous ?</label><br />
+      <select name="pays" id="pays">
+        <option value="france">France</option>
+        <option value="espagne">Espagne</option>
+        <option value="italie">Italie</option>
+        <option value="royaume-uni">Royaume-Uni</option>
+        <option value="canada">Canada</option>
+        <option value="etats-unis">États-Unis</option>
+        <option value="chine">Chine</option>
+        <option value="japon">Japon</option>
+      </select>
+      <div>
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="user_name" />
+      </div>
+      <div>
+        <label for="mail">e-mail :</label>
+        <input type="email" id="mail" name="user_mail" />
+      </div>
+      <div>
+        <label for="msg">Message :</label>
+        <textarea id="msg" name="user_message"></textarea>
+      </div>
+      <div class="button">
+        <button type="submit">Envoyer le message</button>
+      </div>
+      <fieldset>
+        <legend>Quel est votre sport préféré ?</legend>
+        <p>
+          <input type="radio" name="size" id="size_1" value="small" />
+          <label for="size_1">Ski</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size_2" value="medium" />
+          <label for="size_2">Snowboard</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size_3" value="large" />
+          <label for="size_3">Surf</label>
+        </p>
+      </fieldset>
+    </form>
+
+    <form method="post" action="traitement.php">
+      <p><label for="pseudo">Votre Pseudo</label> : <input type="text" name="pseudo" id="pseudo" placeholder="indiquez votre pseudo" size="30" /><br />
+        <label for="pass">Votre Mot de Passe</label> : <input type="password" name="pass" id="pass" placeholder="indiquez votre mot de passe" size="30" /><br />
+      <label for="commentaire">Laissez moi un commentaire</label>
+    <textarea name="commentaire od"</p>
+   </form>
+
+  </body>
+</html>
